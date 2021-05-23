@@ -11,7 +11,7 @@ inputEl.addEventListener("input", onInputChange);
 
 function onInputChange(event) {
   spanEl.textContent = event.currentTarget.value;
-  if (spanEl.textContent === "" ) {
+  if (spanEl.textContent.trim() === "" ) {
     spanEl.textContent = "незнайомець";
   }
 }
